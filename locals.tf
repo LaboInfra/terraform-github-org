@@ -37,6 +37,10 @@ locals {
     "kanban" = {
       visibility  = "private"
     }
+    "terraform-laboinfra-net-dns" = {
+      description = "Terraform code for laboinfra.net DNS management"
+      visibility  = "private"
+    }
   }
 }
 
