@@ -2,7 +2,7 @@ locals {
   members = {
     "clementdlg" = {
       role = "admin"
-      repositories = {} # is admin so no need to specify permissions on repositories
+      repositories = {} # is admin so no need to specify permissions
     }
     "Rider128" = {
       role = "member"
@@ -34,5 +34,9 @@ locals {
       description = "Document d'architecture technique pour le service de service de VM à la demande"
       visibility  = "private"
     }
+    "kanban" = {
+      visibility  = "private"
+    }
   }
 }
+
