@@ -19,4 +19,10 @@ terraform {
 
 provider "github" {
   owner = "laboinfra"
+  token = var.GITHUB_TOKEN
+}
+
+variable "GITHUB_TOKEN" {
+  description = "The GitHub token for authentication"
+  type        = string
 }
