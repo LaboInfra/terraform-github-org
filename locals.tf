@@ -2,12 +2,23 @@ locals {
   members = {
     "clementdlg" = {
       role = "admin"
+      repositories = {} # is admin so no need to specify permissions on repositories
     }
     "Rider128" = {
       role = "member"
+      repositories = {
+        "dat" = {
+          permission = "push"
+        }
+      }
     }
     "hag19" = {
       role = "member"
+      repositories = {
+        "dat" = {
+          permission = "push"
+        }
+      }
     }
     "C1sper" = {
       role = "member"
